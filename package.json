@@ -1,0 +1,40 @@
+{
+	"name": "current-exif-date",
+	"version": "0.0.0",
+	"description": "Get the current date as an Exif date format",
+	"repository": "shinnn/current-exif-date",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"scripts": {
+		"pretest": "eslint --format=codeframe .",
+		"test": "nyc --reporter=html --reporter=text node test.js"
+	},
+	"license": "ISC",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"exif",
+		"photo",
+		"date",
+		"format",
+		"string",
+		"now",
+		"current",
+		"local"
+	],
+	"dependencies": {
+		"exif-date": "^1.2.0"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^5.0.0",
+		"eslint": "^4.19.1",
+		"nyc": "^12.0.2",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node",
+		"rules": {
+			"no-var": "off"
+		}
+	}
+}
