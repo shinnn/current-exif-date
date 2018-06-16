@@ -1,9 +1,9 @@
 'use strict';
 
-var format = require('exif-date').format;
+const format = require('exif-date').format;
 
 module.exports = function currentExifDate() {
-	var currentDate = new Date();
+	const currentDate = new Date();
 
 	return format(new Date(Date.UTC(
 		currentDate.getFullYear(),
