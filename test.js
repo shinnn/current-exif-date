@@ -26,5 +26,17 @@ test('currentExifDate()', t => {
 		'should get the current date as an Exif date format.'
 	);
 
+	t.throws(
+		() => currentExifDate(1),
+		/^RangeError.*Expected no arguments, but got 1 argument\./,
+		'should throw an error when it takes an argument.'
+	);
+
+	t.throws(
+		() => currentExifDate(1, 2),
+		/^RangeError.*Expected no arguments, but got 2 arguments\./,
+		'should throw an error when it takes arguments.'
+	);
+
 	t.end();
 });
