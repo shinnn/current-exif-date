@@ -1,6 +1,6 @@
 {
 	"name": "current-exif-date",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Get the current date as an Exif date format",
 	"repository": "shinnn/current-exif-date",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
