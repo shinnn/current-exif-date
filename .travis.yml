@@ -1,9 +1,6 @@
 branches:
   except: /^v\d/
+dist: xenial
 language: node_js
 node_js: node
 after_script: node_modules/.bin/nyc report --reporter=text-lcov | npx coveralls
-env:
-  global:
-    - COVERALLS_SERVICE_NAME=travis-pro
-    - secure: i6O9ZYcS5l1zAJCne1uM57TTxvXBShLHUi3PNPalSETR8C4xH4qDiiLoKDh+lzbAiKhDz0F4Xap1rQlC5sBWCtzQMpPZuULXdarWnmJS+el8Mgu0/D+jPi1IUfvJ6CtVpwGeHz2fuad7uEiPvjInMLXQVilzcn/kR/AKxKMet5Xk0fybmqzV1H4ClEPq/apHpfhSFib5AisnxXkDLDb4lLtlTVYsP39lCSvmsyDy1oTO8gTFYB8d/F28FQXu0KDl00cKDhBSWQRSWhHgOOiU/VxRtJ61u54PvLBUQ8aXfJjS7kk+gD4xfhdjznGtqxddWPIC5DhJCpzOguYQry6QKUgwpG5PTslTan4R4K45/WEdiBWTbHYEPcxtG+6SQYwdYIhxtlC06NLTAJEQvL3kMrlU5AKRrJag2u/wMmSr6/9pM2jM9/eNo6YN033m4LZR01VJ8H8Hp/JmTBLR3zzSEjGVA23KLBBDb6ORPMG5RZAxJoEjKnTN58TfBDlicc04LVNc87VC2t6uWnGHUloleR+iCADxLm7Wi9zQsc5vMl5Jjdm+AqwcA3UAABto26Gtiap3lP1ejV+DvypndURtcsPckZJvHYZzIdWj1HdOCUtAilBboPNA9krG/WamiJFpJgEj7qjKQhHF0Iv9Psg8/bZ6pmh9ofjJv+kZKHc5wxk=
