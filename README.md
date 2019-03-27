@@ -19,7 +19,7 @@ format, and the date and time separated by one blank character
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install current-exif-date
@@ -48,4 +48,4 @@ currentExifDate(); //=> '2018:06:15 01:04:30', not '2018:06:14 01:04:30 16:04:30
 
 ## License
 
-[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Shinnosuke Watanabe
